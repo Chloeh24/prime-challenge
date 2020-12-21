@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,11 +7,13 @@
   </head>
   <body>
     <h1>Prime table generator</h1>
-    <form onSubmit>
+    <div class="form">
       <label for="prime">Enter a number</label>
       <input type="text" id="prime" name="prime" />
-    </form>
+      <button type="button" onclick="createTable()">Generate Table!</button>
+    </div>
+    <table></table>
+    <script src="script.js"></script>
+    <script src="index.test.js"></script>
   </body>
-  <script src="script.js"></script>
-  <script src="index.test.js"></script>
 </html>
