@@ -1,0 +1,14 @@
+{
+  "name": "findmypast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.test.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^5.0.1"
+  }
+}
