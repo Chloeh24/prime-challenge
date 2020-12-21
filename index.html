@@ -7,12 +7,11 @@
   </head>
   <body>
     <h1>Prime table generator</h1>
-    <div class="form">
-      <label for="prime">Enter a number</label>
-      <input type="text" id="prime" name="prime" />
-      <button type="button" onclick="createTable()">Generate Table!</button>
-    </div>
-    <table></table>
+    <form class="form" method="post">
+      <label for="number">Enter a number</label>
+      <input type="number" id="number" name="number" />
+      <button type="submit">Generate Table!</button>
+    </form>
     <script src="script.js"></script>
     <script src="index.test.js"></script>
   </body>

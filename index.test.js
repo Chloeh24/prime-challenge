@@ -33,6 +33,16 @@ test("Checks if 9 is a prime number", (t) => {
   t.end();
 });
 
+test("Generates no numbers if number is negative", (t) => {
+  t.deepEqual(generatePrimeArray(-3), [], "Should return []");
+  t.end();
+});
+
+test("Generates 2 if input is 1", (t) => {
+  t.deepEqual(generatePrimeArray(1), [2], "Should return [2]");
+  t.end();
+});
+
 test("Generates a list of first 3 prime numbers", (t) => {
   t.deepEqual(generatePrimeArray(3), [2, 3, 5], "Should return [2, 3, 5]");
   t.end();

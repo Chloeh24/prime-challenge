@@ -1,6 +1,3 @@
-const generateBtn = document.getElementById("generate");
-const primeArray = [];
-
 const isPrime = (n) => {
   const s = Math.floor(Math.sqrt(n));
 
@@ -19,6 +16,7 @@ const isPrime = (n) => {
 };
 
 const generatePrimeArray = (n) => {
+  const primeArray = [];
   for (let i = 2; n > 0; i++) {
     if (isPrime(i)) {
       primeArray.push(i);
@@ -29,7 +27,12 @@ const generatePrimeArray = (n) => {
 };
 
 const createTable = (n) => {
-  for (let i = 0; i < primeArray.length; i++) {}
+  generatePrimeArray();
+
+  let col = `<td> </td>`;
+  for (let i = 0; i < primeArray.length; i++) {
+    col += `<td> ${primeArray[i]} </td>`;
+  }
 };
 
-module.exports = { isPrime, generatePrimeArray };
+module.exports = { isPrime, generatePrimeArray, createTable };
