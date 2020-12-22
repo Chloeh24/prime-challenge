@@ -17,3 +17,4 @@
 ## What I would do if I had more time
 - Update the styling and design of the table so it's easier to read
 - Add more tests
+- Make application more dynamic and interesting, maybe with React
