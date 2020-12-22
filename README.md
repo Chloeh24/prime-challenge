@@ -10,7 +10,7 @@
 - run tests with `npm run test`
 
 ## What I'm pleased with
-- Keeping the code simple and only building the functionality 
+- Keeping the code simple and focusing on functionality
 - Breaking down each of the required functions into succinct maintainable code
 - Ensuring there were unit tests for each major function
 
