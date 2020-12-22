@@ -29,9 +29,6 @@ const generatePrimeArray = (n) => {
   return primeArray;
 };
 
-// generate product of primes
-generatePrimeArray();
-
 const createData = (array) => {
   // create data entries
   const data = [];
