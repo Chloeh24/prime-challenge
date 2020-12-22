@@ -4,7 +4,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const { createTable } = require("./script.js");
+const { generatePrimeArray, createData, displayTable } = require("./script.js");
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
@@ -12,8 +12,9 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
   const n = req.body.number;
-
-  createTable(n);
+  const primeArray = generatePrimeArray(n);
+  const data = createData(primeArray);
+  res.send(displayTable(data));
 });
 
 app.listen(3000, () => {

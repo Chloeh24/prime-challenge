@@ -53,15 +53,21 @@ const createData = (array) => {
 
 // display prime multiplication table
 const displayTable = (data) => {
-  table = "<table>";
-  for (let row of data) {
-    table += "<tr>";
-    for (let cell of row) {
-      table += "<td>" + row[cell] + "</td>";
+  var result = "<table border=1 width='500' cellspacing='0'cellpadding='5'>";
+
+  // iterate and create new row
+  for (var i = 0; i < data.length; i++) {
+    result += "<tr>";
+    // iterate and insert entry into row
+    for (var j = 0; j < data[i].length; j++) {
+      result += "<td>" + data[i][j] + "</td>";
     }
-    table += "</tr>";
+    // close row
+    result += "</tr>";
   }
-  return table;
+  result += "</table>";
+
+  return result;
 };
 
-module.exports = { isPrime, generatePrimeArray, createData };
+module.exports = { isPrime, generatePrimeArray, createData, displayTable };
