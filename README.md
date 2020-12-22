@@ -10,11 +10,11 @@
 - run tests with `npm run test`
 
 ## What I'm pleased with
-- Keeping the code simple 
+- Keeping the code simple and only building the functionality 
 - Breaking down each of the required functions into succinct maintainable code
 - Ensuring there were unit tests for each major function
 
 ## What I would do if I had more time
-- Update the styling and design of the table so it's easier to read
+- Update the styling of the table so it's easier to read
 - Add more tests
-- Make application more dynamic and interesting, maybe with React
+- Make the design of the application more dynamic and appealing, possibly with React
