@@ -1,6 +1,6 @@
 const test = require("tape");
 
-const { isPrime, generatePrimeArray } = require("./script.js");
+const { isPrime, generatePrimeArray, createData } = require("./script.js");
 
 test("initialise tests", (t) => {
   let x = 5;
@@ -54,5 +54,15 @@ test("Generates a list of first 6 prime numbers", (t) => {
     [2, 3, 5, 7, 11, 13],
     "Should return [2, 3, 5, 7, 11, 13]"
   );
+  t.end();
+});
+
+test("No data if array is empty", (t) => {
+  t.deepEqual(createData([]), [], "Should return empty array");
+  t.end();
+});
+
+test("If 3 numbers given, should return 4 rows of entries", (t) => {
+  t.equal(createData([2, 3, 4]).length, 4, "Should return 4 ");
   t.end();
 });
