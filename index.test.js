@@ -66,3 +66,12 @@ test("If 3 numbers given, should return 4 rows of entries", (t) => {
   t.equal(createData([2, 3, 4]).length, 4, "Should return 4 ");
   t.end();
 });
+
+test("Should return correct calculations of first 2 prime numbers", (t) => {
+  t.deepEqual(createData([2, 3]), [
+    ["-", 2, 3],
+    [2, 4, 6],
+    [3, 6, 9],
+  ]);
+  t.end();
+});
